@@ -5,21 +5,21 @@
 class DejaVu < Formula
   desc "Search Claude Code, Codex and Cursor session history locally"
   homepage "https://vshulcz.github.io/deja-vu/"
-  version "0.21.3"
+  version "0.21.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.3/deja-vu_0.21.3_darwin_amd64.tar.gz"
-      sha256 "e49dcbd1869072c787c4925b12deb64e6d01169daa0163893712c9ae673d35eb"
+      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.4/deja-vu_0.21.4_darwin_amd64.tar.gz"
+      sha256 "afd24fd80319ff160c4a21bdbb96cca7cb10e1cc0d4444d990b1aa9874e8a1b8"
 
       define_method(:install) do
         bin.install "deja"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.3/deja-vu_0.21.3_darwin_arm64.tar.gz"
-      sha256 "1c6455e715945aa4eb7ad24dc278970497e968a3dabf8e1c952585c234bca4b0"
+      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.4/deja-vu_0.21.4_darwin_arm64.tar.gz"
+      sha256 "6270baa134e674fd2498de9b345d8445d41c0a3d76ad7ab7a9571484f357a8b7"
 
       define_method(:install) do
         bin.install "deja"
@@ -29,15 +29,15 @@ class DejaVu < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.3/deja-vu_0.21.3_linux_amd64.tar.gz"
-      sha256 "5fbd54dc5415153e0d0ef98b2893a005d49813fc22a49fea854879a047756bfe"
+      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.4/deja-vu_0.21.4_linux_amd64.tar.gz"
+      sha256 "c9fe097c4624190f304c0e5419a55f7c3d8e26da201608c501246bcbaec173ed"
       define_method(:install) do
         bin.install "deja"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.3/deja-vu_0.21.3_linux_arm64.tar.gz"
-      sha256 "c65901726aa973bef233f6656e126cb6ab796b59218ed82050d103a120978d0f"
+      url "https://github.com/vshulcz/deja-vu/releases/download/v0.21.4/deja-vu_0.21.4_linux_arm64.tar.gz"
+      sha256 "a2583d6bf4b4df5c702c91e600290f540c6f530d72cbd73f83409d2977e06c6d"
       define_method(:install) do
         bin.install "deja"
       end
